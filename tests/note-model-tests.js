@@ -24,9 +24,6 @@
     if (got !== want) {
       throw new Error(`Expected ${want}, got ${got}`)
     }
-    // if (note.returnNote() !== "Hello JavaScript") {
-    //   throw new Error(`Expected ${string2}`);
-    // }   
   };
   testReturnNote();
 })(this);

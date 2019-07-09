@@ -9,5 +9,3 @@
   exports.Note = Note;
   
 })(this);
-
-
