@@ -1,15 +1,15 @@
 (function() {
-  function testNoteList() {
+  function testShowAllNotes() {
     var noteList = new NoteList()
 
-    var got = noteList.allNotes.length
+    var got = noteList.showAllNotes().length
     var want = 0
 
     if (got !== want) {
       throw new Error(`Expected ${want}, got ${got}`)
     }
   }
-  testNoteList();
+  testShowAllNotes();
 })(this);
 
 (function() {
@@ -18,7 +18,7 @@
     var string = "Cheese twists are twisty"
     noteList.createNote(string)
 
-    var got = noteList.allNotes.length
+    var got = noteList.showAllNotes().length
     var want = 1
 
     if (got !== want) {
