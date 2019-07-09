@@ -1,6 +1,11 @@
 # Notes app
 
-This is going to be a front-end simple page web app built only with JavaScript.
+This project is going to be a front-end simple page web app built only with JavaScript.
+The test _framework_ is written in JS, and app functionality had been built with TDD.
+
+### Approach
+
+The app is built around three given user stories and a series of challenges. Code has been written through pair programming.
 
 ## User Stories
 
@@ -24,6 +29,6 @@ So I can see all the information in the note
 
 (NB: notes do not need to be permanently stored. If the user refreshes their web page, they'll lose their notes, and that's fine.)
 
-## Model Diagram
+## App Diagram
 
-tbc
+![Diagram of the current app structure]()
