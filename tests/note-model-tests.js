@@ -3,8 +3,11 @@
     var string = "Hello World"
     var note = new Note(string);
 
-    if (note.text !== "Hello World") {
-      throw new Error(`Expected ${string}`);
+    var got = note.text
+    var want = string
+
+    if (got !== want) {
+      throw new Error(`Expected ${want}, got ${got}`)
     }
   };
   testCreateNote();
@@ -15,9 +18,15 @@
     var string2 = "Hello JavaScript"
     var note = new Note(string2);
 
-    if (note.returnNote() !== "Hello JavaScript") {
-      throw new Error(`Expected ${string2}`);
+    var got = note.returnNote()
+    var want = string2
+
+    if (got !== want) {
+      throw new Error(`Expected ${want}, got ${got}`)
     }
+    // if (note.returnNote() !== "Hello JavaScript") {
+    //   throw new Error(`Expected ${string2}`);
+    // }   
   };
   testReturnNote();
 })(this);
