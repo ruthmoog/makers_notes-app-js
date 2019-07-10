@@ -31,4 +31,11 @@ So I can see all the information in the note
 
 ## App Diagram
 
-![Diagram of the current app structure]()
+## Running the App
+
+Run for the command line with node & npm installed, from the project root:
+
+```shell
+$ npm install http-server --save
+$ node node_modules/http-server/bin/http-server
+```
